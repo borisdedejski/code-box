@@ -1,8 +1,12 @@
 This project is a demo for the npm package `react-code-box` https://www.npmjs.com/package/react-code-box 
 
+![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-light.gif)
+![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-dark.gif)
+![alt text](https://github.com/borisdedejski/code-box/blob/master/codebox-light.png)
 
 ## Demo
 https://github.com/borisdedejski/react-code-box-demo
+
 ## Installation
 With Yarn:
 `yarn add react-code-box`
@@ -29,36 +33,7 @@ import CodeBox from "react-code-box/dist/index";
 
 const TodoApp = () => {
 
-  let code = `
-  class TodoList extends Component {
-      state = { todos: [], text: '' };
-      updateText = e => {
-          this.setState({ text: e.target.value });
-      };
-      addItem = () => {
-          let { todos, text } = this.state;
-          todos = todos.concat({ text });
-          this.setState({ todos, text: '' });
-      };
-      render({ }, { todos, text }) {
-          return (
-              <div>
-                  <form onSubmit={this.addItem} action="javascript:">
-                      <input value={text} onInput={this.updateText} />
-                      <input type="submit" value="Add" />
-                  </form>
-                  <ul>
-                      { todos.map( todo => (
-                          <li>{todo.text}</li>
-                      )) }
-                  </ul>
-              </div>
-          );
-      }
-  }
-  
-  render(<TodoList />);
-
+  let code = `var a = 1`  
 
   return (
       <CodeBox
