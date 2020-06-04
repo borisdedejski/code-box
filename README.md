@@ -1,8 +1,10 @@
-This project is a demo for the npm package `react-code-box` https://www.npmjs.com/package/react-code-box 
+Package: https://www.npmjs.com/package/react-code-box <br/>
+Package Repo: https://github.com/borisdedejski/react-code-box<br/> 
+Demo: https://github.com/borisdedejski/react-code-box-demo
 
-![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-light.gif)
-![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-dark.gif)
-![alt text](https://github.com/borisdedejski/code-box/blob/master/codebox-light.png)
+![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-light.gif?raw=true)
+![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-dark.gif?raw=true)
+![alt text](https://github.com/borisdedejski/code-box/blob/master/codebox-light.png?raw=true)
 
 ## Demo
 https://github.com/borisdedejski/react-code-box-demo
