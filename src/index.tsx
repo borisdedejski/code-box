@@ -9,15 +9,21 @@ type CodeBoxProps = {
   code: string;
   style?: CSSProperties;
   className?: string;
+  id: string;
 };
 const CodeBox = (props: CodeBoxProps) => {
   const { variant, title, code, style, className } = props;
 
-  variant === "dark" && require("./dark.css") && require("./prism.css");
-  variant === "light" && require("./light.css") && require("./prism-light.css");
+  if (variant === "dark") {
+    require("./dark.css");
+    require("./prism.css");
+  } else if (variant === "light") {
+    require("./light.css");
+    require("./prism-light.css");
+  }
 
   useEffect(() => {
-    const demo = new GDemo("#container-react-box");
+    const demo = new GDemo(`#${props.id}`);
 
     const highlightedCode = Prism.highlight(
       code,
@@ -40,6 +46,6 @@ const CodeBox = (props: CodeBoxProps) => {
       .end();
   });
 
-  return <div id="container-react-box" style={style} className={className} />;
+  return <div id={props.id} style={style} className={className} />;
 };
 export default CodeBox;

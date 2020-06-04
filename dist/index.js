@@ -27,10 +27,16 @@ const demo_1 = __importDefault(require("@glorious/demo"));
 const prismjs_1 = __importDefault(require("prismjs"));
 const CodeBox = (props) => {
     const { variant, title, code, style, className } = props;
-    variant === "dark" && require("./dark.css") && require("./prism.css");
-    variant === "light" && require("./light.css") && require("./prism-light.css");
+    if (variant === "dark") {
+        require("./dark.css");
+        require("./prism.css");
+    }
+    else if (variant === "light") {
+        require("./light.css");
+        require("./prism-light.css");
+    }
     react_1.useEffect(() => {
-        const demo = new demo_1.default("#container-react-box");
+        const demo = new demo_1.default(`#${props.id}`);
         const highlightedCode = prismjs_1.default.highlight(code, prismjs_1.default.languages.js, "javascript");
         demo
             .openApp("editor", {
@@ -46,6 +52,6 @@ const CodeBox = (props) => {
             .write(highlightedCode)
             .end();
     });
-    return react_1.default.createElement("div", { id: "container-react-box", style: style, className: className });
+    return react_1.default.createElement("div", { id: props.id, style: style, className: className });
 };
 exports.default = CodeBox;
