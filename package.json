@@ -1,0 +1,31 @@
+{
+  "name": "react-code-box",
+  "version": "1.0.15",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borisdedejski/code-box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/borisdedejski/code-box/issues"
+  },
+  "homepage": "https://github.com/borisdedejski/code-box#readme",
+  "dependencies": {
+    "@glorious/demo": "^0.11.1",
+    "@types/node": "^14.0.10",
+    "@types/prismjs": "^1.16.1",
+    "@types/react": "^16.9.35",
+    "prismjs": "^1.20.0",
+    "react": "^16.13.1",
+    "typescript": "^3.9.3"
+  }
+}
