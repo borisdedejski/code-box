@@ -4,7 +4,6 @@ Demo: https://github.com/borisdedejski/react-code-box-demo
 
 ![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-light.gif?raw=true)
 ![alt text](https://github.com/borisdedejski/code-box/blob/master/gif-dark.gif?raw=true)
-![alt text](https://github.com/borisdedejski/code-box/blob/master/codebox-light.png?raw=true)
 
 ## Demo
 https://github.com/borisdedejski/react-code-box-demo
